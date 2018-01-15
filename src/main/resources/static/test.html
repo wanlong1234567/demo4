@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function Display(x) {
+            // x.src="/static/images/default/portal/jimi_1_hover.png";
+            $("#h").css("visibility","visible");
+
+        }
+        function Hide(y) {
+            // y.src='/static/images/default/portal/jimi_1.png' ;
+            $("#h").css("visibility","hidden");
+        }
+    </script>
+</head>
+<body>
+<div class='totop' clstag="pageclick|keycount|ssc__201704134|2" >
+    <img style="border:0 none" src='totop.png' onmouseover="this.src='3.png'" onmouseout="this.src='totop.png'">
+</div>
+<div class='feedback'>
+    <img id ="h" style="border:0 none; width:65px; height:80px; visibility: hidden;" src="1.png">
+    <img style="border:0 none" src='2.png' onmouseover="Display(this)" onmouseout="Hide(this)">
+</div>
+</body>
+</html>
